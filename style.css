@@ -5,28 +5,6 @@
 body {
   background-color: rgb(21, 22, 21);
 }
-body.light {
-  background-color: white;
-}
-
-.toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: rgba(84, 85, 84, 0.7);
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.toggle:before {
-  content: "\f186";
-  font-family: fontawesome;
-  color: azure;
-}
 
 .header {
   position: relative;
@@ -82,8 +60,8 @@ body.light {
   display: flex;
   margin: 20px;
   padding: 5px;
-  min-width: 100px;
-  max-width: 400px;
+  width: 350px;
+  height: 400px;
   cursor: pointer;
 }
 .card:hover {
