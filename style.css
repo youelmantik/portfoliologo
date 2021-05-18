@@ -4,6 +4,33 @@
 }
 body {
   background-color: rgb(21, 22, 21);
+  transition: background-color 0.5s;
+}
+body.light {
+  background-color: azure;
+}
+.toggle {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(84, 85, 84, 0.8);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle:before {
+  content: "\f186";
+  font-family: fontAwesome;
+  color: azure;
+}
+body.light .toggle:before {
+  content: "\f185";
+  font-family: fontAwesome;
 }
 
 .header {
@@ -30,12 +57,20 @@ body {
   color: azure;
   font-weight: 600;
 }
+body.light .header h5 {
+  color: rgb(21, 22, 21);
+}
+
 .header p {
   position: relative;
   justify-content: center;
   display: flex;
   font-size: 0.8em;
   color: rgb(135, 144, 158);
+}
+
+body.light .header p {
+  color: rgb(21, 22, 21);
 }
 
 .contCard {
@@ -76,8 +111,16 @@ body {
   font-size: 25px;
   color: azure;
 }
+
+body.light .card h5 {
+  color: rgb(21, 22, 21);
+}
 .card p {
   font-weight: 450;
   color: rgb(135, 144, 158);
   text-align: center;
+}
+
+body.light .card p {
+  color: rgb(21, 22, 21);
 }
