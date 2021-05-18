@@ -98,12 +98,13 @@ body.light .header p {
   width: 350px;
   height: 400px;
   cursor: default;
+  border-radius: 5%;
 }
-.card:hover {
+/* .card:hover {
   transition: all.4s;
   transform: scale(1.1);
   border-radius: 5%;
-}
+} */
 
 .card h5 {
   font-weight: 650;
