@@ -7,7 +7,7 @@ body {
   transition: background-color 0.5s;
 }
 body.light {
-  background-color: azure;
+  background-color: rgb(241, 241, 241);
 }
 .toggle {
   position: absolute;
